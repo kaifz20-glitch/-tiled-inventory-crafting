@@ -23,6 +23,13 @@ All notable changes to the Tiled Inventory & Crafting System.
 - Docs refreshed for the namespace rename (assembly names, code samples,
   save path now `persistentDataPath/DJS.TiledInventoryCrafting/saves`).
 
+### Store media
+- **Capture Demo Preview** now renders a three-shot gallery in one run
+  (all 1920×1080, ≥1200px min width for the store): `demo_preview.png`
+  (main view), `screenshot_trade.png` (trade drawer open),
+  `screenshot_crafting.png` (crafting queue populated). Derived store
+  images regenerated from the current UI.
+
 ## [1.2.1] — layout overlap fix
 
 ### Fixed
