@@ -2,6 +2,17 @@
 
 All notable changes to the Tiled Inventory & Crafting System.
 
+## [1.2.1] — layout overlap fix
+
+### Fixed
+- **Overlapping rows in the crafting panel**: the scroll-view content's
+  `VerticalLayoutGroup` had `childControlHeight = false`, so recipe and queue rows
+  (built with stretch anchors) all filled the entire scroll content and rendered on
+  top of each other after crafting. The layout group now controls child heights, so
+  rows stack with proper spacing. Same latent fix applied to the dropdown popup and
+  the equipment slot list.
+- Regenerated `demo_preview.png` (and the derived store images) against the fixed UI.
+
 ## [1.2.0] — asset store release
 
 ### Packaging

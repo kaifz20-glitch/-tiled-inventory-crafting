@@ -215,7 +215,7 @@ namespace TiledInventory
             vlg.padding = new RectOffset(8, 8, 8, 8);
             vlg.childAlignment = TextAnchor.UpperCenter;
             vlg.childControlWidth = true;
-            vlg.childControlHeight = false;
+            vlg.childControlHeight = true;
             vlg.childForceExpandWidth = true;
             vlg.childForceExpandHeight = false;
 
@@ -506,7 +506,7 @@ namespace TiledInventory
                 vlg.spacing = 1f;
                 vlg.padding = new RectOffset(2, 2, 2, 2);
                 vlg.childControlWidth = true;
-                vlg.childControlHeight = false;
+                vlg.childControlHeight = true;
                 vlg.childForceExpandWidth = true;
 
                 var csf = popup.GetComponent<ContentSizeFitter>();

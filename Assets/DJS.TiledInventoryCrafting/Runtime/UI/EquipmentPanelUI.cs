@@ -27,7 +27,7 @@ namespace TiledInventory
             var layout = slotColumn.gameObject.AddComponent<VerticalLayoutGroup>();
             layout.spacing = 8f;
             layout.childControlWidth = true;
-            layout.childControlHeight = false;
+            layout.childControlHeight = true;
             layout.childForceExpandWidth = true;
 
             string[] names = { "Head", "Chest", "Legs", "Weapon", "Accessory" };

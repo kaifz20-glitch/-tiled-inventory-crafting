@@ -9,7 +9,7 @@ Every field below is pre-filled from the package. Keep the version in sync with
 ## 1. Release version
 
 ```
-1.2.0
+1.2.1
 ```
 
 Three-part semantic versioning. Bump `package.json` (`"version"`), `CHANGELOG.md`
