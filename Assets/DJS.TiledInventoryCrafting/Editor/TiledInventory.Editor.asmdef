@@ -1,0 +1,20 @@
+{
+    "name": "TiledInventory.Editor",
+    "rootNamespace": "TiledInventory.Editor",
+    "references": [
+        "TiledInventory.Runtime",
+        "Unity.ugui",
+        "UnityEditor.GraphView"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

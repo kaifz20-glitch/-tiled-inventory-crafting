@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 508b9f456ad2cff40a6d6704e22ae6b6, type: 3}
+  m_Name: Potion
+  m_EditorClassIdentifier: 
+  id: demo_potion
+  displayName: Brew Potion
+  icon: {fileID: 0}
+  inputs:
+  - item: {fileID: 11400000, guid: 80c185e650434df4f8e0ab5f673a6783, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 62f874a9df6921b429e38e384f3bed42, type: 2}
+    count: 1
+  outputs:
+  - item: {fileID: 11400000, guid: 917edbda27467dd45b38bf92f5f39d2e, type: 2}
+    count: 1
+  craftTime: 1.5
+  levelRequirement: 1
+  goldCost: 10
+  xpCost: 0
+  specialCosts:
+  - item: {fileID: 11400000, guid: f3f3397f29fbce44ebcecd1951868bf7, type: 2}
+    count: 1
+  failureChance: 0.25
+  failureChanceReductionPerSkill: 0.005
+  cooldownSeconds: 6
