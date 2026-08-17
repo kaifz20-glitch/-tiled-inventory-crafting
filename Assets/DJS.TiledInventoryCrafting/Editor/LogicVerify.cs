@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Reflection;
-using TiledInventory;
+using DJS.TiledInventoryCrafting;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     /// <summary>
     /// Edit-mode verification of the core systems (no play mode needed): grid rules,
@@ -27,7 +27,7 @@ namespace TiledInventory.EditorTools
 
         /// <summary>Batch/CI entry point: same checks as <see cref="Run"/> but no dialog.
         /// Exits with code 0 on success, 1 on failure. Run via:
-        /// <c>Unity -batchmode -quit -projectPath &lt;path&gt; -executeMethod TiledInventory.EditorTools.LogicVerify.RunHeadless</c></summary>
+        /// <c>Unity -batchmode -quit -projectPath &lt;path&gt; -executeMethod DJS.TiledInventoryCrafting.EditorTools.LogicVerify.RunHeadless</c></summary>
         public static void RunHeadless()
         {
             RunCore();

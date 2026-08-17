@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// One achievement: a counter (e.g. "craft.sword") that must reach a target value.

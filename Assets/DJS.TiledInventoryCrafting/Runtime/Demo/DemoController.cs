@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Drives the RPG demo scenario (collect materials → craft sword): a HUD with

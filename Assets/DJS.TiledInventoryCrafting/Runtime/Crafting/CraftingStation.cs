@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// A place in the world where crafting happens (workbench, anvil, alchemy table...).

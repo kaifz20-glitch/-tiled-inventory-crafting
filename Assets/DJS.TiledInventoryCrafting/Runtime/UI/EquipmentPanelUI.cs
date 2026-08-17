@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Renders the equipment grid as five labeled body-part slots (head, chest, legs,

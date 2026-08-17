@@ -2,6 +2,27 @@
 
 All notable changes to the Tiled Inventory & Crafting System.
 
+## [1.3.0] — DJS namespaces
+
+### Changed
+- All namespaces renamed to carry the `DJS.` prefix: `TiledInventory` →
+  `DJS.TiledInventoryCrafting` and `TiledInventory.EditorTools` →
+  `DJS.TiledInventoryCrafting.EditorTools`. Assemblies renamed to
+  `DJS.TiledInventoryCrafting.Runtime` / `.Editor` (asmdefs + metas renamed
+  together, so GUID references stay intact).
+
+### New-user documentation
+- **Welcome window** — opens once on first import (Tools → Tiled Inventory →
+  Welcome) with quick-start buttons: Build Demo Scene, Open Documentation,
+  Open Demo Scene.
+- **Tools → Tiled Inventory → Open Documentation** — reveals the hidden
+  `Documentation~` folder in the OS file browser (Unity hides `~` folders from
+  the Project window by design, so docs were invisible in-editor).
+- Visible `README.md` inside the package folder pointing to the full docs,
+  plus a first-import note in GettingStarted.
+- Docs refreshed for the namespace rename (assembly names, code samples,
+  save path now `persistentDataPath/DJS.TiledInventoryCrafting/saves`).
+
 ## [1.2.1] — layout overlap fix
 
 ### Fixed

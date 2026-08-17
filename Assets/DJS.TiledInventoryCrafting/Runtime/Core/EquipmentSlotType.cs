@@ -1,4 +1,4 @@
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>Which equipment slot an item occupies. <see cref="None"/> means the item
     /// cannot be equipped and lives only in regular inventory grids.</summary>

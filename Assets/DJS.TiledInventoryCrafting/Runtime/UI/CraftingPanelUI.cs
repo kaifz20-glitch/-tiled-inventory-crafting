@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// The crafting UI: a scrollable list of recipes (locked ones grayed out with the

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     /// <summary>
     /// Procedural icon renderer for the demo content. Paints anti-aliased SDF shapes

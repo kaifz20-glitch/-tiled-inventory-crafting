@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Tracks stat counters (craft counts, failures, ...), checks them against every
@@ -78,7 +78,7 @@ namespace TiledInventory
                 }
             }
             if (any)
-                Debug.Log($"[TiledInventory] Achievement unlocked: {string.Join(", ", unlocked)}");
+                Debug.Log($"[DJS.TiledInventoryCrafting] Achievement unlocked: {string.Join(", ", unlocked)}");
         }
 
         /// <summary>Snapshot of counters (for save files).</summary>

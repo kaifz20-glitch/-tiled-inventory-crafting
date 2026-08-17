@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using TiledInventory;
+using DJS.TiledInventoryCrafting;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     /// <summary>
     /// Phase 2 visual recipe editor. Define recipes by dragging nodes instead of editing
@@ -176,7 +176,7 @@ namespace TiledInventory.EditorTools
                 created++;
             }
             AssetDatabase.SaveAssets();
-            Debug.Log($"[TiledInventory] Exported {created} recipe asset(s) to {relative}.");
+            Debug.Log($"[DJS.TiledInventoryCrafting] Exported {created} recipe asset(s) to {relative}.");
             RefreshPreview();
         }
 

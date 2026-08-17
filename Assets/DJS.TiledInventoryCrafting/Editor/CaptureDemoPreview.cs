@@ -1,15 +1,18 @@
 using System.IO;
-using TiledInventory;
+using DJS.TiledInventoryCrafting;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     /// <summary>
-    /// Renders the demo UI to a 1920×1080 PNG without entering play mode, for store-page
+    /// Renders the demo UI to 1920×1080 PNGs without entering play mode, for store-page
     /// screenshots. Menu: Tools → Tiled Inventory → Capture Demo Preview.
-    /// The generated image is saved next to the project as <c>demo_preview.png</c>.
+    /// The generated images are saved next to the project:
+    ///   demo_preview.png          — main view (inventory + equipment + crafting)
+    ///   screenshot_trade.png      — trade drawer open
+    ///   screenshot_crafting.png   — crafting queue populated with jobs
     /// </summary>
     public static class CaptureDemoPreview
     {
@@ -23,7 +26,7 @@ namespace TiledInventory.EditorTools
             var demo = Object.FindObjectOfType<DemoController>();
             if (ui == null)
             {
-                Debug.LogError("[TiledInventory] No InventoryCraftingUI found in the demo scene.");
+                Debug.LogError("[DJS.TiledInventoryCrafting] No InventoryCraftingUI found in the demo scene.");
                 return;
             }
 
@@ -47,6 +50,45 @@ namespace TiledInventory.EditorTools
             canvas.worldCamera = cam;
             canvas.planeDistance = 1f;
 
+            // shot 1 — main view
+            SaveShot(cam, rt, "demo_preview.png");
+
+            // shot 2 — trade drawer open
+            ui.ToggleTradePanel(true);
+            SaveShot(cam, rt, "screenshot_trade.png");
+            ui.ToggleTradePanel(false);
+
+            // shot 3 — crafting queue populated (queue a couple of craftable recipes)
+            QueueShowcaseCrafts(ui);
+            SaveShot(cam, rt, "screenshot_crafting.png");
+
+            Object.DestroyImmediate(camGo);
+            rt.Release();
+            Object.DestroyImmediate(rt);
+
+            // discard the runtime-built UI objects (canvas etc.) from the open scene
+            EditorSceneManager.OpenScene(scenePath);
+        }
+
+        private static void QueueShowcaseCrafts(InventoryCraftingUI ui)
+        {
+            var crafting = ui != null ? ui.CraftingView?.Crafting : null;
+            if (crafting == null) return;
+
+            // queue every recipe the showcase inventory can currently afford
+            foreach (var recipe in Registry.AllRecipes)
+            {
+                if (recipe == null) continue;
+                if (crafting.CanQueue(recipe) == CraftRejection.None)
+                {
+                    crafting.TryQueue(recipe);
+                    if (crafting.Queue.Count >= 3) break; // keep the row list tidy
+                }
+            }
+        }
+
+        private static void SaveShot(Camera cam, RenderTexture rt, string filename)
+        {
             cam.Render();
 
             var tex = new Texture2D(1920, 1080, TextureFormat.RGB24, false);
@@ -55,17 +97,11 @@ namespace TiledInventory.EditorTools
             tex.Apply();
             RenderTexture.active = null;
 
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "demo_preview.png");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), filename);
             File.WriteAllBytes(path, tex.EncodeToPNG());
-            Debug.Log($"[TiledInventory] Preview saved to {path}");
+            Debug.Log($"[DJS.TiledInventoryCrafting] Preview saved to {path}");
 
             Object.DestroyImmediate(tex);
-            Object.DestroyImmediate(camGo);
-            rt.Release();
-            Object.DestroyImmediate(rt);
-
-            // discard the runtime-built UI objects (canvas etc.) from the open scene
-            EditorSceneManager.OpenScene(scenePath);
         }
     }
 }

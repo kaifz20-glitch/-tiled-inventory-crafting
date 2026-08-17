@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Typed equipment layer over the "Equipment" grid. Pins each equipment slot to one

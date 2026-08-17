@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// One-shot particle burst created entirely at runtime — used for the "successful

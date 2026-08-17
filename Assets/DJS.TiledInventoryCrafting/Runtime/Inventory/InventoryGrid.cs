@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>Per-slot placement rules. Empty lists mean "no restriction".
     /// A locked slot rejects all placement and is drawn dimmed in the UI.</summary>

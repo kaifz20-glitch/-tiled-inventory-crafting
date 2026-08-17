@@ -1,6 +1,6 @@
 using System;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>Simple numeric stats an item can carry (damage, armor, ...).
     /// Extend the enum to add game-specific stats.</summary>

@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Where save blobs live. Swap implementations freely:
@@ -25,7 +25,7 @@ namespace TiledInventory
     public class LocalFileSaveBackend : ISaveBackend
     {
         public static string DefaultDirectory =>
-            Path.Combine(Application.persistentDataPath, "TiledInventory", "saves");
+            Path.Combine(Application.persistentDataPath, "DJS.TiledInventoryCrafting", "saves");
 
         private readonly string directory;
 
@@ -52,7 +52,7 @@ namespace TiledInventory
             }
             catch (Exception e)
             {
-                Debug.LogError($"[TiledInventory] Save failed for slot '{slot}': {e.Message}");
+                Debug.LogError($"[DJS.TiledInventoryCrafting] Save failed for slot '{slot}': {e.Message}");
                 return false;
             }
         }
@@ -69,7 +69,7 @@ namespace TiledInventory
             }
             catch (Exception e)
             {
-                Debug.LogError($"[TiledInventory] Load failed for slot '{slot}': {e.Message}");
+                Debug.LogError($"[DJS.TiledInventoryCrafting] Load failed for slot '{slot}': {e.Message}");
                 return false;
             }
         }
@@ -85,7 +85,7 @@ namespace TiledInventory
             }
             catch (Exception e)
             {
-                Debug.LogError($"[TiledInventory] Delete failed for slot '{slot}': {e.Message}");
+                Debug.LogError($"[DJS.TiledInventoryCrafting] Delete failed for slot '{slot}': {e.Message}");
                 return false;
             }
         }

@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using TiledInventory;
+using DJS.TiledInventoryCrafting;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     /// <summary>
     /// Builds the complete RPG demo scene from code: a camera, one GameObject hosting all
@@ -29,7 +29,7 @@ namespace TiledInventory.EditorTools
             var systems = CreateSystems();
 
             EditorSceneManager.SaveScene(scene, ScenePath);
-            Debug.Log($"[TiledInventory] Demo scene saved to {ScenePath}. Open it and press Play.");
+            Debug.Log($"[DJS.TiledInventoryCrafting] Demo scene saved to {ScenePath}. Open it and press Play.");
             EditorGUIUtility.PingObject(AssetDatabase.LoadAssetAtPath<SceneAsset>(ScenePath));
         }
 
@@ -159,7 +159,7 @@ namespace TiledInventory.EditorTools
                 var prop = so.FindProperty(kv.Key);
                 if (prop == null)
                 {
-                    Debug.LogWarning($"[TiledInventory] No serialized field '{kv.Key}' on {target.GetType().Name}.");
+                    Debug.LogWarning($"[DJS.TiledInventoryCrafting] No serialized field '{kv.Key}' on {target.GetType().Name}.");
                     continue;
                 }
                 if (prop.isArray && prop.propertyType == SerializedPropertyType.Generic)

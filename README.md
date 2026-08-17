@@ -33,8 +33,8 @@ whole screen (canvas, panels, toolbar, tooltips, drag-and-drop) with no prefab w
 
 ```
 Assets/DJS.TiledInventoryCrafting/
-├── Runtime/          systems + UI (TiledInventory.Runtime)
-├── Editor/           tools: scene builder, graph editor, validation (TiledInventory.Editor)
+├── Runtime/          systems + UI (DJS.TiledInventoryCrafting.Runtime)
+├── Editor/           tools: scene builder, graph editor, validation (DJS.TiledInventoryCrafting.Editor)
 ├── Demo/             generated demo scene + content assets
 └── Documentation~/   full docs (not included in builds)
 ```

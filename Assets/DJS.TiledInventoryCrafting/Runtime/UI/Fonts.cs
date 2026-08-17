@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Resolves the built-in UI font without requiring TextMeshPro essentials or any

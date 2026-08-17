@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Global id → asset lookup for items and recipes. Instances self-register in

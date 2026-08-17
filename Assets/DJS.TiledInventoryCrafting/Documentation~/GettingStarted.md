@@ -5,10 +5,15 @@
 Copy the `DJS.TiledInventoryCrafting` folder anywhere under `Assets/` (or import the
 `.unitypackage`). There are no package dependencies beyond uGUI, which ships with Unity.
 
+> On first import a **Welcome window** opens with quick-start buttons
+> (Build Demo Scene / Open Documentation / Open Demo Scene). Reopen it anytime via
+> **Tools → Tiled Inventory → Welcome**. The docs live in the hidden
+> `Documentation~` folder — open them via **Tools → Tiled Inventory → Open Documentation**.
+
 Everything compiles into two assemblies:
 
-- `TiledInventory.Runtime` — the systems and UI (works in builds).
-- `TiledInventory.Editor` — tools (recipe graph editor, scene builder, validation).
+- `DJS.TiledInventoryCrafting.Runtime` — the systems and UI (works in builds).
+- `DJS.TiledInventoryCrafting.Editor` — tools (recipe graph editor, scene builder, validation).
 
 ## 2. Try the demo
 

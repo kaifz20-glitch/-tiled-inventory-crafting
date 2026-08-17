@@ -1,4 +1,4 @@
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>Broad category of an item. Used for slot restrictions and search/filter UI.</summary>
     public enum ItemCategory

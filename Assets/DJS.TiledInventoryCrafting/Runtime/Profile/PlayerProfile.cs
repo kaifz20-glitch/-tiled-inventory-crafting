@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Lightweight player meta-data used by the crafting economy: level, XP, gold and

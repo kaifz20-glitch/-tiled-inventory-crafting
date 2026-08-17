@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Snapshots the whole game state (profile, all grids, crafting queue, cooldowns,
@@ -166,7 +166,7 @@ namespace TiledInventory
             }
             catch (Exception e)
             {
-                Debug.LogError($"[TiledInventory] Failed to parse save '{slot}': {e.Message}");
+                Debug.LogError($"[DJS.TiledInventoryCrafting] Failed to parse save '{slot}': {e.Message}");
                 Loaded?.Invoke(false);
                 return false;
             }
@@ -225,7 +225,7 @@ namespace TiledInventory
         public bool DeleteSave()
         {
             bool ok = Backend.Delete(slot);
-            if (ok) Debug.Log($"[TiledInventory] Deleted save slot '{slot}'.");
+            if (ok) Debug.Log($"[DJS.TiledInventoryCrafting] Deleted save slot '{slot}'.");
             return ok;
         }
     }

@@ -1,6 +1,6 @@
 using System;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// In-memory stand-in for a real transport. Useful for single-player builds,

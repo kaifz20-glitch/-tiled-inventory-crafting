@@ -2,9 +2,9 @@
 
 ## Import / compile
 
-**Q: "The type or namespace name 'TiledInventory' could not be found."**
+**Q: "The type or namespace name 'DJS.TiledInventoryCrafting' could not be found."**
 Your scripts must reference the assemblies. If you use asmdefs, add
-`TiledInventory.Runtime` to your asmdef's references. If not, ensure the
+`DJS.TiledInventoryCrafting.Runtime` to your asmdef's references. If not, ensure the
 `DJS.TiledInventoryCrafting` folder is under `Assets/`.
 
 **Q: Compile error about `StandaloneInputModule` being deprecated.**

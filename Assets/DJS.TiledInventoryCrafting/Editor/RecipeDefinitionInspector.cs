@@ -1,8 +1,8 @@
 using System.Text;
-using TiledInventory;
+using DJS.TiledInventoryCrafting;
 using UnityEditor;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     [CustomEditor(typeof(RecipeDefinition))]
     public class RecipeDefinitionInspector : UnityEditor.Editor

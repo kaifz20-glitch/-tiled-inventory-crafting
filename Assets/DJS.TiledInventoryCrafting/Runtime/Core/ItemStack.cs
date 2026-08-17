@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>A stack of an item. Used everywhere an item quantity travels:
     /// inventory slots, recipe inputs/outputs, trades, save data.</summary>

@@ -26,7 +26,7 @@ quit (`OnApplicationQuit`).
 `LocalFileSaveBackend` writes to:
 
 ```
-Application.persistentDataPath/TiledInventory/saves/{slot}.json
+Application.persistentDataPath/DJS.TiledInventoryCrafting/saves/{slot}.json
 ```
 
 This is correct on every platform (Windows, macOS, Linux, Android, iOS, WebGL).

@@ -1,10 +1,14 @@
 {
-    "name": "TiledInventory.Runtime",
-    "rootNamespace": "TiledInventory",
+    "name": "DJS.TiledInventoryCrafting.Editor",
+    "rootNamespace": "DJS.TiledInventoryCrafting.Editor",
     "references": [
-        "Unity.ugui"
+        "DJS.TiledInventoryCrafting.Runtime",
+        "Unity.ugui",
+        "UnityEditor.GraphView"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Audio feedback for the demo and the product. All clips are generated at runtime

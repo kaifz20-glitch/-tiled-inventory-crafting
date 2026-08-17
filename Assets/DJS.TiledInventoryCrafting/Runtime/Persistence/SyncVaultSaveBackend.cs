@@ -4,7 +4,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Cloud save backend backed by SyncVault. SyncVault is a game backend service that
@@ -132,9 +132,9 @@ namespace TiledInventory
         {
             if (request == null) return;
             if (request.result == UnityWebRequest.Result.Success)
-                Debug.Log($"[TiledInventory] SyncVault {op} '{slot}' OK.");
+                Debug.Log($"[DJS.TiledInventoryCrafting] SyncVault {op} '{slot}' OK.");
             else
-                Debug.LogWarning($"[TiledInventory] SyncVault {op} '{slot}' failed: {request.error}");
+                Debug.LogWarning($"[DJS.TiledInventoryCrafting] SyncVault {op} '{slot}' failed: {request.error}");
         }
 
         [Serializable]

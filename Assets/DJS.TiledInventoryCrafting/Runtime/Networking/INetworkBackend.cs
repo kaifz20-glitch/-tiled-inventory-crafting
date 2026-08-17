@@ -1,6 +1,6 @@
 using System;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>Well-known message kinds carried over the network.</summary>
     public static class NetworkMessageTypes

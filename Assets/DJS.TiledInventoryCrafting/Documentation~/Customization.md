@@ -25,7 +25,7 @@ between projects.
 
 ```csharp
 // somewhere before UI creation (e.g. in your bootstrap):
-TiledInventory.Fonts.Default = Resources.Load<Font>("MyFont");
+DJS.TiledInventoryCrafting.Fonts.Default = Resources.Load<Font>("MyFont");
 ```
 
 The UI creates all text through `UIFactory.CreateText`, so one change re-fonts everything.

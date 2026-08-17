@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &879013369
+--- !u!1 &956940004
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,20 +130,20 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 879013383}
-  - component: {fileID: 879013382}
-  - component: {fileID: 879013381}
-  - component: {fileID: 879013380}
-  - component: {fileID: 879013379}
-  - component: {fileID: 879013378}
-  - component: {fileID: 879013377}
-  - component: {fileID: 879013376}
-  - component: {fileID: 879013375}
-  - component: {fileID: 879013374}
-  - component: {fileID: 879013373}
-  - component: {fileID: 879013372}
-  - component: {fileID: 879013371}
-  - component: {fileID: 879013370}
+  - component: {fileID: 956940018}
+  - component: {fileID: 956940017}
+  - component: {fileID: 956940016}
+  - component: {fileID: 956940015}
+  - component: {fileID: 956940014}
+  - component: {fileID: 956940013}
+  - component: {fileID: 956940012}
+  - component: {fileID: 956940011}
+  - component: {fileID: 956940010}
+  - component: {fileID: 956940009}
+  - component: {fileID: 956940008}
+  - component: {fileID: 956940007}
+  - component: {fileID: 956940006}
+  - component: {fileID: 956940005}
   m_Layer: 0
   m_Name: GameSystems
   m_TagString: Untagged
@@ -151,46 +151,46 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &879013370
+--- !u!114 &956940005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bc5b663e28a62d4e9e48139b617386c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 879013382}
-  crafting: {fileID: 879013379}
-  equipment: {fileID: 879013381}
-  profile: {fileID: 879013380}
-  saveManager: {fileID: 879013377}
-  achievements: {fileID: 879013376}
-  ui: {fileID: 879013371}
-  audioFeedback: {fileID: 879013372}
+  inventory: {fileID: 956940017}
+  crafting: {fileID: 956940014}
+  equipment: {fileID: 956940016}
+  profile: {fileID: 956940015}
+  saveManager: {fileID: 956940012}
+  achievements: {fileID: 956940011}
+  ui: {fileID: 956940006}
+  audioFeedback: {fileID: 956940007}
   wood: {fileID: 11400000, guid: 62f874a9df6921b429e38e384f3bed42, type: 2}
   ironOre: {fileID: 11400000, guid: c22bcd71322894f44a3797ab85bd2379, type: 2}
   leather: {fileID: 11400000, guid: 80c185e650434df4f8e0ab5f673a6783, type: 2}
---- !u!114 &879013371
+--- !u!114 &956940006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4769893cb7cf1804997a40c8336c19cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 879013382}
-  equipment: {fileID: 879013381}
-  crafting: {fileID: 879013379}
-  profile: {fileID: 879013380}
-  trading: {fileID: 879013375}
+  inventory: {fileID: 956940017}
+  equipment: {fileID: 956940016}
+  crafting: {fileID: 956940014}
+  profile: {fileID: 956940015}
+  trading: {fileID: 956940010}
   recipes:
   - {fileID: 11400000, guid: f034c6b58ab6e0948aa405819c7ec0ac, type: 2}
   - {fileID: 11400000, guid: 447d821f245fd7a46a78df3d1064b754, type: 2}
@@ -236,13 +236,13 @@ MonoBehaviour:
     accent: {r: 1, g: 0.72, b: 0.25, a: 1}
   buildOnAwake: 1
   canvasSortingOrder: 10
---- !u!114 &879013372
+--- !u!114 &956940007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7f92f0b7fbe0db4c985c29b488e184d, type: 3}
@@ -252,54 +252,54 @@ MonoBehaviour:
   CraftClip: {fileID: 0}
   EquipClip: {fileID: 0}
   FailClip: {fileID: 0}
---- !u!114 &879013373
+--- !u!114 &956940008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eae9968c1e3f87c43be7ccf777348e54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &879013374
+--- !u!114 &956940009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a10f5c05d3c54ad4bb806b47f93aee87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 879013382}
-  crafting: {fileID: 879013379}
-  trading: {fileID: 879013375}
---- !u!114 &879013375
+  inventory: {fileID: 956940017}
+  crafting: {fileID: 956940014}
+  trading: {fileID: 956940010}
+--- !u!114 &956940010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebd799bb668a63d4ea8b2c7d084d3226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localInventory: {fileID: 879013382}
-  network: {fileID: 879013374}
---- !u!114 &879013376
+  localInventory: {fileID: 956940017}
+  network: {fileID: 956940009}
+--- !u!114 &956940011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bc6ba61120df364d991ab015618a871, type: 3}
@@ -308,59 +308,59 @@ MonoBehaviour:
   achievements:
   - {fileID: 11400000, guid: 55420d75886c61740b47e10dc91cac87, type: 2}
   - {fileID: 11400000, guid: 9603ebc210b420f4e8d222b233dfc6c6, type: 2}
---- !u!114 &879013377
+--- !u!114 &956940012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df7cc0f8122c6eb40bb190373d113d31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 879013382}
-  crafting: {fileID: 879013379}
-  profile: {fileID: 879013380}
-  achievements: {fileID: 879013376}
+  inventory: {fileID: 956940017}
+  crafting: {fileID: 956940014}
+  profile: {fileID: 956940015}
+  achievements: {fileID: 956940011}
   slot: save1
   autoSave: 1
   autoSaveInterval: 60
---- !u!114 &879013378
+--- !u!114 &956940013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4d9661386d6f5c4d81ae3b96d6838eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stationId: station_default
---- !u!114 &879013379
+--- !u!114 &956940014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8911629a5c9b62945a20015d7b5c1ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 879013382}
-  profile: {fileID: 879013380}
---- !u!114 &879013380
+  inventory: {fileID: 956940017}
+  profile: {fileID: 956940015}
+--- !u!114 &956940015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1d3332dbeba5dc47b1c9aefcb9cfe7e, type: 3}
@@ -371,25 +371,25 @@ MonoBehaviour:
   gold: 0
   craftingSkill: 1
   xpPerLevel: 100
---- !u!114 &879013381
+--- !u!114 &956940016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28c4227a5fd957f49a3d9a6eac0a1418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &879013382
+--- !u!114 &956940017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b19bd6aead8163a45ba18be9395dd60b, type: 3}
@@ -397,13 +397,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grids: []
   defaultMainGridSize: {x: 9, y: 8}
---- !u!4 &879013383
+--- !u!4 &956940018
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879013369}
+  m_GameObject: {fileID: 956940004}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -412,7 +412,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2067967538
+--- !u!1 &2056307658
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -420,9 +420,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2067967541}
-  - component: {fileID: 2067967540}
-  - component: {fileID: 2067967539}
+  - component: {fileID: 2056307661}
+  - component: {fileID: 2056307660}
+  - component: {fileID: 2056307659}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -430,21 +430,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2067967539
+--- !u!81 &2056307659
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067967538}
+  m_GameObject: {fileID: 2056307658}
   m_Enabled: 1
---- !u!20 &2067967540
+--- !u!20 &2056307660
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067967538}
+  m_GameObject: {fileID: 2056307658}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
@@ -489,13 +489,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &2067967541
+--- !u!4 &2056307661
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067967538}
+  m_GameObject: {fileID: 2056307658}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
@@ -508,5 +508,5 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2067967541}
-  - {fileID: 879013383}
+  - {fileID: 2056307661}
+  - {fileID: 956940018}

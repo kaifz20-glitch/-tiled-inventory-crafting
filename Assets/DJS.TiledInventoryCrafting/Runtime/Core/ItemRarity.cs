@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>Rarity tiers. Rarity drives color-coding in every UI panel.</summary>
     public enum ItemRarity

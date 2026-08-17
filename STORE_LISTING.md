@@ -9,7 +9,7 @@ Every field below is pre-filled from the package. Keep the version in sync with
 ## 1. Release version
 
 ```
-1.2.1
+1.3.0
 ```
 
 Three-part semantic versioning. Bump `package.json` (`"version"`), `CHANGELOG.md`
@@ -75,7 +75,7 @@ inventory, crafting, grid, equipment, drag-drop, recipe, rpg, loot, trade, persi
 
 (15 keywords — also set in `package.json` for Package Manager search.)
 
-## 8. Images
+## 8. Images — submission fields
 
 All four required sizes are generated from the current UI render (cover-fit crops
 of `demo_preview.png`). Files sit next to this document in the repo root —
@@ -88,14 +88,30 @@ of `demo_preview.png`). Files sit next to this document in the repo root —
 | Cover image | 1950 × 1300 | `cover_1950.png` |
 | Social media image | 1200 × 630 | `social_1200.png` |
 
+## 8b. Screenshots & videos section
+
+Upload these in the portal's **Screenshots & videos** field (min width 1200px
+for images; videos/audio up to 500MB):
+
+| Type | File | Shows |
+|---|---|---|
+| Screenshot | `demo_preview.png` (1920×1080) | Main screen — inventory, equipment, crafting panels |
+| Screenshot | `screenshot_trade.png` (1920×1080) | Trade drawer open (player-to-player offers) |
+| Screenshot | `screenshot_crafting.png` (1920×1080) | Crafting queue populated with jobs + progress bars |
+| Video (optional) | record ~30–60 s | Press Play in the demo scene; drive it with the top HUD buttons |
+| Audio samples | — | Skip — all audio is procedural (no audio files ship) |
+
+Regenerate anytime with `Tools → Tiled Inventory → Capture Demo Preview`
+(renders all three PNGs in one run).
+
 Notes:
 - The social image guidance says **no text or logo overlays** — the generated
   crop contains only in-game UI, which is fine, but consider a text-free variant
   if the store team pushes back.
-- `demo_preview.png` (1920×1080) is the full in-app screenshot — use it for the
-  portal's screenshots section.
 - The crops are automatic placeholders. For a finished store page, commission
   branded marketing art at these exact sizes.
+- For the video: Unity Recorder (Package Manager) or OBS both work — the demo
+  scene needs no setup, just press Play.
 
 ## 9. Suggested category
 

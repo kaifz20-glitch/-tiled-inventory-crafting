@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// All UI colors in one place so a game can re-skin the whole system from the

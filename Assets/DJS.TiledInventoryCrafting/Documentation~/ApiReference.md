@@ -1,7 +1,7 @@
 # API Reference
 
-All runtime code lives in the `TiledInventory` namespace. Editor tools live in
-`TiledInventory.EditorTools`.
+All runtime code lives in the `DJS.TiledInventoryCrafting` namespace. Editor tools live in
+`DJS.TiledInventoryCrafting.EditorTools`.
 
 ---
 
@@ -194,7 +194,7 @@ Swap this for your own RPG stats by adapting `CraftingSystem` references.
 `bool Delete(string slot)`.
 
 ### `LocalFileSaveBackend : ISaveBackend`
-Writes to `Application.persistentDataPath/TiledInventory/saves/{slot}.json`.
+Writes to `Application.persistentDataPath/DJS.TiledInventoryCrafting/saves/{slot}.json`.
 
 ### `SyncVaultSaveBackend : ISaveBackend`
 Cloud backend adapter (see [Persistence](Persistence.md)). Async helpers:
@@ -378,7 +378,7 @@ runtime particle burst for craft-complete feedback.
 
 ---
 
-## Editor tools (`TiledInventory.EditorTools`)
+## Editor tools (`DJS.TiledInventoryCrafting.EditorTools`)
 
 | Menu item | Purpose |
 |---|---|
@@ -388,5 +388,5 @@ runtime particle burst for craft-complete feedback.
 | `Tools → Tiled Inventory → Validate Package` | Success-criteria checks. |
 | `Tools → Tiled Inventory → Run Logic Verification` | Edit-mode test suite: grid rules, crafting queue, save/load round-trip, UI build, drop item (39 checks). |
 | `Tools → Tiled Inventory → Verify Recipe Graph` | Edit-mode test suite for the graph editor: theming, edge styling, port sync, export (14 checks). |
-| `Tools → Tiled Inventory → Capture Demo Preview` | Renders the demo UI to `demo_preview.png` (1920×1080) for store-page screenshots. |
+| `Tools → Tiled Inventory → Capture Demo Preview` | Renders the demo UI to 1920×1080 store-page screenshots (`demo_preview.png`, `screenshot_trade.png`, `screenshot_crafting.png`). |
 | `Assets → Create → Tiled Inventory → …` | Item / Recipe / Achievement definitions. |

@@ -2,7 +2,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Singleton tooltip panel (created by <see cref="InventoryCraftingUI"/>). Hover any

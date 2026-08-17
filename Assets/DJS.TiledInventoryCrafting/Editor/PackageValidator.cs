@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using TiledInventory;
+using DJS.TiledInventoryCrafting;
 using UnityEditor;
 using UnityEngine;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     /// <summary>
     /// Self-check against the product's success criteria: demo scene present, demo

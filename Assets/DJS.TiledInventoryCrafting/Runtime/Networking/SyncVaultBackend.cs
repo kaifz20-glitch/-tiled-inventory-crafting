@@ -4,7 +4,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Multiplayer transport backed by SyncVault channels.
@@ -44,7 +44,7 @@ namespace TiledInventory
             PlayerId = playerId ?? Guid.NewGuid().ToString("N");
             this.roomId = roomId;
             IsConnected = true;
-            Debug.Log($"[TiledInventory] SyncVault connected as '{PlayerId}' in room '{roomId}'.");
+            Debug.Log($"[DJS.TiledInventoryCrafting] SyncVault connected as '{PlayerId}' in room '{roomId}'.");
             // Start polling the channel for messages (see UpdatePump below).
         }
 
@@ -71,7 +71,7 @@ namespace TiledInventory
             op.completed += _ =>
             {
                 if (VerboseLogging && request.result != UnityWebRequest.Result.Success)
-                    Debug.LogWarning($"[TiledInventory] SyncVault send failed: {request.error}");
+                    Debug.LogWarning($"[DJS.TiledInventoryCrafting] SyncVault send failed: {request.error}");
                 request.Dispose();
             };
         }
@@ -120,7 +120,7 @@ namespace TiledInventory
                 }
                 else if (VerboseLogging)
                 {
-                    Debug.LogWarning($"[TiledInventory] SyncVault poll failed: {pollRequest.error}");
+                    Debug.LogWarning($"[DJS.TiledInventoryCrafting] SyncVault poll failed: {pollRequest.error}");
                 }
             };
         }

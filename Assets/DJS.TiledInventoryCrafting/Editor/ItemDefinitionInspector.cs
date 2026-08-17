@@ -1,7 +1,7 @@
-using TiledInventory;
+using DJS.TiledInventoryCrafting;
 using UnityEditor;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     [CustomEditor(typeof(ItemDefinition))]
     public class ItemDefinitionInspector : UnityEditor.Editor

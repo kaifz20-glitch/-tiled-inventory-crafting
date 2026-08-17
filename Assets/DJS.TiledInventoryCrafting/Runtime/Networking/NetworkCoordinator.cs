@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     /// <summary>
     /// Glue between a transport (<see cref="INetworkBackend"/>) and the game systems.
@@ -83,7 +83,7 @@ namespace TiledInventory
                     trading?.HandleNetworkMessage(message);
                     break;
                 default:
-                    Debug.Log($"[TiledInventory] Unhandled network message '{message.type}' from {message.fromPlayerId}.");
+                    Debug.Log($"[DJS.TiledInventoryCrafting] Unhandled network message '{message.type}' from {message.fromPlayerId}.");
                     break;
             }
         }
@@ -152,7 +152,7 @@ namespace TiledInventory
             }
             catch (Exception e)
             {
-                Debug.LogError($"[TiledInventory] Failed to apply remote inventory: {e.Message}");
+                Debug.LogError($"[DJS.TiledInventoryCrafting] Failed to apply remote inventory: {e.Message}");
             }
         }
 
@@ -168,7 +168,7 @@ namespace TiledInventory
             }
             catch (Exception e)
             {
-                Debug.LogError($"[TiledInventory] Failed to apply remote queue: {e.Message}");
+                Debug.LogError($"[DJS.TiledInventoryCrafting] Failed to apply remote queue: {e.Message}");
             }
         }
 

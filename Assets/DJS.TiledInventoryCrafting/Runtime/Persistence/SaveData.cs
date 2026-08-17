@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TiledInventory
+namespace DJS.TiledInventoryCrafting
 {
     // Plain field-based DTOs so JsonUtility can round-trip them without any
     // third-party serializers. Dictionaries are avoided on purpose.

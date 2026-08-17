@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.IO;
-using TiledInventory;
+using DJS.TiledInventoryCrafting;
 using UnityEditor;
 using UnityEngine;
 
-namespace TiledInventory.EditorTools
+namespace DJS.TiledInventoryCrafting.EditorTools
 {
     /// <summary>
     /// Generates the demo content (items, recipes, achievements + generated icons) as
@@ -29,7 +29,7 @@ namespace TiledInventory.EditorTools
             var recipes = EnsureRecipes(items);
             EnsureAchievements(recipes);
             AssetDatabase.SaveAssets();
-            Debug.Log($"[TiledInventory] Demo content ready: {items.Count} items, {recipes.Count} recipes.");
+            Debug.Log($"[DJS.TiledInventoryCrafting] Demo content ready: {items.Count} items, {recipes.Count} recipes.");
         }
 
         // ------------------------------------------------------------------ folders
@@ -480,7 +480,7 @@ namespace TiledInventory.EditorTools
             }
             else
             {
-                Debug.LogWarning("[TiledInventory] Sword recipe not found; 'Sword Master' achievement skipped.");
+                Debug.LogWarning("[DJS.TiledInventoryCrafting] Sword recipe not found; 'Sword Master' achievement skipped.");
             }
 
             return list;

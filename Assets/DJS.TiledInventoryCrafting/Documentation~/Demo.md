@@ -50,8 +50,9 @@ contains no prefab references to wire.
 ## Store-page screenshot
 
 **Tools → Tiled Inventory → Capture Demo Preview** renders the fully-built UI
-(equipment + populated inventory + crafting) to a 1920×1080 PNG saved next to the
-project as `demo_preview.png` — no play mode required.
+to 1920×1080 PNGs saved next to the project — no play mode required:
+`demo_preview.png` (main view), `screenshot_trade.png` (trade drawer open) and
+`screenshot_crafting.png` (crafting queue populated).
 
 ## Fresh-import check
 
