@@ -107,8 +107,9 @@ Tools → Gameplay (Inventory & Equipment)
 
 ## 10. Before you publish
 
-- [ ] Fill in `documentationUrl`, `changelogUrl`, `licensesUrl` in
-      `Assets/DJS.TiledInventoryCrafting/package.json` (your real repo links)
+- [x] `documentationUrl`, `changelogUrl`, `licensesUrl` set in
+      `Assets/DJS.TiledInventoryCrafting/package.json`
+      (https://github.com/kaifz20-glitch/-tiled-inventory-crafting)
 - [ ] Confirm the AI/ML declaration (section 6)
 - [ ] Re-run all three verification suites in a clean Unity project
       (Tools → Tiled Inventory: Validate Package, Run Logic Verification,
